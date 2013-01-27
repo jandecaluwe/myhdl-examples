@@ -8,8 +8,7 @@ def gray_counter(gray_count, enable, clock, reset):
 
     @always_seq(clock.posedge, reset=reset)
     def seq():
-        word = intbv(0)[N:]
-        word[:] = concat('1', gray[N-2:], even)
+        word = concat('1', gray[N-2:], even)
         if enable:
             toggled = False
             for i in range(N):
