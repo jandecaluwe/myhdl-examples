@@ -1,5 +1,3 @@
-import os, glob, shutil
-
 from myhdl import *
 
 from UK101AddressDecode import UK101AddressDecode

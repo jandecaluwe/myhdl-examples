@@ -36,3 +36,6 @@ nosetests.xml
 checks
 tb_*.v
 work
+*~
+*.vcd*
+*.pyc
