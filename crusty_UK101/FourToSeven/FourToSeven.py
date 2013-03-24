@@ -14,9 +14,9 @@ ssd[0x7] = a+b+c
 ssd[0x8] = a+b+c+d+e+f+g 
 ssd[0x9] = a+b+c+d+f+g   
 ssd[0xA] = a+b+c+e+f+g  
-ssd[0xB] = c+d+e+f+g 
+ssd[0xb] = c+d+e+f+g 
 ssd[0xC] = a+d+e+f     
-ssd[0xD] = b+c+d+e+g
+ssd[0xd] = b+c+d+e+g
 ssd[0xE] = a+d+e+f+g   
 ssd[0xF] = a+e+f+g
 
