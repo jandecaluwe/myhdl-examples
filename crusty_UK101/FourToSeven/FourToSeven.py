@@ -1,5 +1,9 @@
 from myhdl import *
 
+# The idea to use segment variables to set up the
+# seven segment display table is borrowed from:
+# http://www.piclist.com/techref/microchip/language/C/7segment_C.htm
+
 a, b, c, d, e, f, g = [2**i for i in range(7)]
 ssd = [0] * 16
 
@@ -30,7 +34,7 @@ def FourToSeven(ByteIn, Enable, Polarity, SegOut):
         if Enable == 1:
             SegBuf[:] = ssd[ByteIn]
         if Polarity == 0:
-            SegBuf = ~SegBuf
+            SegBuf[:] = ~SegBuf
         SegOut.next = SegBuf
 
     return comb
