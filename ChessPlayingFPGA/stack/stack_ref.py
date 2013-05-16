@@ -31,7 +31,7 @@ class StackObject(object):
         self.nritems += 1
 
     def pop(self):
-        if self.nritems == 0: 
+        if self.nritems == 1: 
             raise IndexError('Underflow')
         self.ToSPiece[:], self.ToSMask[:] = self.stack.pop() 
         self.nritems -= 1

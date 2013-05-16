@@ -63,7 +63,7 @@ def bench():
         yield Clk.negedge
         Enable.next = 0
         yield Clk.negedge  
-        for i in range(3):
+        for i in range(5):
             yield Clk.negedge
             ref.pop()
             Enable.next = 1
