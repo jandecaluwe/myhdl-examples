@@ -18,7 +18,7 @@ class StackObject(object):
         self.nritems = 0
 
     def mask_reset(self, mask):
-        self.ToSMask &= mask
+        self.ToSMask &= ~mask
 
     def push(self, PieceIn, MaskIn):
         if self.nritems == self.depth: 

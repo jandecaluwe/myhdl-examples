@@ -29,7 +29,7 @@ def Stack(
     def control():
         StackWrite.next = False
         if MaskReset != 0:
-            ToSMask.next = ToSMask & MaskReset
+            ToSMask.next = ToSMask & ~MaskReset
         elif PushPop and Enable: # push
             ToSPiece.next = PieceIn
             ToSMask.next = MaskIn  

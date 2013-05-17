@@ -48,8 +48,8 @@ def bench():
         yield Clk.negedge
         Enable.next = 0
         PushPop.next = 0
-        ref.mask_reset(0x1111)
-        MaskReset.next = 0x1111
+        ref.mask_reset(0x9999)
+        MaskReset.next = 0x9999
         yield Clk.negedge
         MaskReset.next = 0x0
         yield Clk.negedge
