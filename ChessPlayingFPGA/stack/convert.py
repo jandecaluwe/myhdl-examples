@@ -1,3 +1,10 @@
+"""Script that converts MyHDL RTL to Verilog/VDHL
+
+Usage: python convert.py
+
+The verilog/vhdl subdirectories are assumed to exist.
+"""
+
 import glob
 import shutil
 import os

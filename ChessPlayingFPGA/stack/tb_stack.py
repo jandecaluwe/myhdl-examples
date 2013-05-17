@@ -1,3 +1,11 @@
+"""Test bench for the Stack module
+
+The test bench verifies the behavior of a MyHDL RTL
+implementation of the Stack module against a high-level
+reference StackObject model.
+
+"""
+
 from myhdl import *
 
 from stack_ref import StackObject, ONES
@@ -75,6 +83,7 @@ def bench():
 
     @instance
     def check():
+        """On all clock edges, implemention and reference must match"""
         while True:
             yield Clk.posedge
             yield delay(1)

@@ -3,6 +3,12 @@ from myhdl import *
 ONES = 2**16-1
 
 class StackObject(object):
+    """Stack object
+
+    The StackObject class describes the behavior of
+    the Stack at a high-level. It can be used for
+    system simulation and verification of implementations.
+    """
 
     def __init__(self, depth=6):
         self.depth = depth

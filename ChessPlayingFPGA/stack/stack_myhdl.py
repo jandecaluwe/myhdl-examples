@@ -12,6 +12,11 @@ def Stack(
     Clk,
     DEPTH = 6
 ):
+    """Stack module in MyHDL
+
+    This the MyHDL RTL code for the Stack module. It
+    can be converted to Verilog/VHDL and synthesized.
+    """
 
     ONES = 2**16-1
 
