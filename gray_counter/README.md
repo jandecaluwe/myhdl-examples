@@ -1,7 +1,7 @@
 gray_counter
 ============
 
-This is the code from [this blog post](http://www.programmableplanet.com/author.asp?section_id=2438&doc_id=258486).
+This is the code from [this essay](http://www.jandecaluwe.com/hdldesign/thinking-software-rtl.html).
 
 It illustrates how to design at the RTL level by starting from an algorithm. The design problem is a gray counter. The algorithm goes as follows:
 
